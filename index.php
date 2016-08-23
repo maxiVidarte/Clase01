@@ -53,7 +53,15 @@ switch ($numero) {
 	$contador6++;
 		break;
 	case '7':
-	$contador7++;
+	if(($contador7*100/$veces)>5)
+		{
+			$i--;
+			continue;
+		}
+		else
+		{
+		$contador7++;			
+		}
 		break;
 	case '8':
 	$contador8++;
@@ -65,69 +73,38 @@ switch ($numero) {
 		# code...
 		break;
 }
-echo "<h1>mi numero random es : $numero</h1>";	
-
+//echo "<h5>mi numero random es : $numero</h5>";	
 }
-if($contador0!=0)
-{
 $porcentaje =$contador0*100/$veces;
 echo "<h4>El 0 aparecio $contador0 veces</h4>";
 echo "<h4>En promedio serian</h4> $porcentaje %</h4>";
-}
-if($contador1!=0)
-{
 $porcentaje =$contador1*100/$veces;
 echo "<h4>El 1 aparecio $contador1 veces</h4>";
 echo "<h4>En promedio serian</h4> $porcentaje %</h4>";
-}
-if($contador2!=0)
-{
 $porcentaje =$contador2*100/$veces;
 echo "<h4>El 2 aparecio $contador2 veces</h4>";
 echo "<h4>En promedio serian</h4> $porcentaje %</h4>";
-}
-if($contador3!=0)
-{
 $porcentaje =$contador3*100/$veces;
 echo "<h4>El 3 aparecio $contador3 veces</h4>";
 echo "<h4>En promedio serian</h4> $porcentaje %</h4>";
-}
-if($contador4!=0)
-{
 $porcentaje =$contador4*100/$veces;
 echo "<h4>El 4 aparecio $contador4 veces</h4>";
 echo "<h4>En promedio serian</h4> $porcentaje %</h4>";
-}
-if($contador5!=0)
-{
 $porcentaje =$contador5*100/$veces;
 echo "<h4>El 5 aparecio $contador5 veces</h4>";
 echo "<h4>En promedio serian</h4> $porcentaje %</h4>";
-}
-if($contador6!=0)
-{
 $porcentaje =$contador6*100/$veces;
 echo "<h4>El 6 aparecio $contador6 veces</h4>";
 echo "<h4>En promedio serian</h4> $porcentaje %</h4>";
-}
-if($contador7!=0)
-{
 $porcentaje =$contador7*100/$veces;
 echo "<h4>El 7 aparecio $contador7 veces</h4>";
 echo "<h4>En promedio serian</h4> $porcentaje %</h4>";
-}
-if($contador8!=0)
-{
 $porcentaje =$contador8*100/$veces;
 echo "<h4>El 8 aparecio $contador8 veces</h4>";
 echo "<h4>En promedio serian</h4> $porcentaje %</h4>";
-}
-if($contador9!=0)
-{
 $porcentaje =$contador9*100/$veces;
 echo "<h4>El 9 aparecio $contador9 veces</h4>";
 echo "<h4>En promedio serian</h4> $porcentaje %</h4>";
-}
 ?>
 </body>
 </html>
