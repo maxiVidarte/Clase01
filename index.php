@@ -15,16 +15,7 @@ $nombre = "maximiliano";
 
 #con las siguientes lineas consigo hacer un random 10 veces
 $veces = 10;
-$contador0 =0;
-$contador1 = 0;
-$contador2 = 0;
-$contador3 = 0;
-$contador4 = 0;
-$contador5 = 0;
-$contador6 = 0;
-$contador7 = 0;
-$contador8 = 0;
-$contador9 = 0;
+$contadorArray[]=0;
 
 for ($i=0; $i < $veces; $i++)
 { 
@@ -32,42 +23,42 @@ for ($i=0; $i < $veces; $i++)
 $numero = rand(0,100);
 switch ($numero) {
 	case '0':
-	$contador0++;
+	$contadorArray[0]++;
 		break;
 	case '1':
-	$contador1++;
+	$contadorArray[1]++;
 		break;
 	case '2':
-	$contador2++;
+	$contadorArray[2]++;
 		break;
 	case '3':
-	$contador3++;
+	$contadorArray[3]++;
 		break;
 	case '4':
-	$contador4++;
+	$contadorArray[4]++;
 		break;
 	case '5':
-	$contador5++;
+	$contadorArray[5]++;
 		break;
 	case '6':
-	$contador6++;
+	$contadorArray[6]++;
 		break;
 	case '7':
-	if(($contador7*100/$veces)>5)
+	if(($contadorArray[7]*100/$veces)>5)
 		{
 			$i--;
 			continue;
 		}
 		else
 		{
-		$contador7++;			
+		$contadorArray[7]++;			
 		}
 		break;
 	case '8':
-	$contador8++;
+	$contadorArray[8]++;
 		break;
 	case '9':
-	$contador9++;
+	$contadorArray[9]++;
 		break;
 	default:
 		# code...
@@ -75,34 +66,34 @@ switch ($numero) {
 }
 //echo "<h5>mi numero random es : $numero</h5>";	
 }
-$porcentaje =$contador0*100/$veces;
-echo "<h4>El 0 aparecio $contador0 veces</h4>";
+$porcentaje =$contadorArray[0]*100/$veces;
+echo "<h4>El 0 aparecio $contadorArray[0] veces</h4>";
 echo "<h4>En promedio serian</h4> $porcentaje %</h4>";
-$porcentaje =$contador1*100/$veces;
-echo "<h4>El 1 aparecio $contador1 veces</h4>";
+$porcentaje =$contadorArray[1]*100/$veces;
+echo "<h4>El 1 aparecio $contadorArray[1] veces</h4>";
 echo "<h4>En promedio serian</h4> $porcentaje %</h4>";
-$porcentaje =$contador2*100/$veces;
-echo "<h4>El 2 aparecio $contador2 veces</h4>";
+$porcentaje =$contadorArray[2]*100/$veces;
+echo "<h4>El 2 aparecio $contadorArray[2] veces</h4>";
 echo "<h4>En promedio serian</h4> $porcentaje %</h4>";
-$porcentaje =$contador3*100/$veces;
+$porcentaje =$contadorArray[3]*100/$veces;
 echo "<h4>El 3 aparecio $contador3 veces</h4>";
 echo "<h4>En promedio serian</h4> $porcentaje %</h4>";
-$porcentaje =$contador4*100/$veces;
+$porcentaje =$contadorArray[4]*100/$veces;
 echo "<h4>El 4 aparecio $contador4 veces</h4>";
 echo "<h4>En promedio serian</h4> $porcentaje %</h4>";
-$porcentaje =$contador5*100/$veces;
+$porcentaje =$contadorArray[5]*100/$veces;
 echo "<h4>El 5 aparecio $contador5 veces</h4>";
 echo "<h4>En promedio serian</h4> $porcentaje %</h4>";
-$porcentaje =$contador6*100/$veces;
+$porcentaje =$contadorArray[6]*100/$veces;
 echo "<h4>El 6 aparecio $contador6 veces</h4>";
 echo "<h4>En promedio serian</h4> $porcentaje %</h4>";
-$porcentaje =$contador7*100/$veces;
+$porcentaje =$contadorArray[7]*100/$veces;
 echo "<h4>El 7 aparecio $contador7 veces</h4>";
 echo "<h4>En promedio serian</h4> $porcentaje %</h4>";
-$porcentaje =$contador8*100/$veces;
+$porcentaje =$contadorArray[8]*100/$veces;
 echo "<h4>El 8 aparecio $contador8 veces</h4>";
 echo "<h4>En promedio serian</h4> $porcentaje %</h4>";
-$porcentaje =$contador9*100/$veces;
+$porcentaje =$contadorArray[9]*100/$veces;
 echo "<h4>El 9 aparecio $contador9 veces</h4>";
 echo "<h4>En promedio serian</h4> $porcentaje %</h4>";
 ?>
